@@ -1,57 +1,141 @@
-<p>&nbsp;</p>
-<header>
-<h1>My Biotech Journey</h1>
-<p>Student Portfolio &mdash; Biotechnology</p>
-</header><main>
-<section>
-<h2>About Me</h2>
-<p>Hello! I'm a passionate biotechnology student interested in the intersection of biology, technology, and data science. This portfolio highlights my academic journey, coding projects, research papers, and lab reports.</p>
-</section>
-<section id="projects" class="projects">
-<h2>Featured Projects</h2>
-<div class="project-grid">
-<div class="project-card"><img src="https://images.unsplash.com/photo-1506744038136-46273834b3fb?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Genome Editing" />
-<div class="card-body">
-<div class="subtitle">CRISPR Research</div>
-<div class="title"><strong>Precision Genome Editing</strong></div>
-<div class="description">Developing targeted gene therapies for rare genetic disorders.</div>
-</div>
-</div>
-<div class="project-card"><img src="https://images.unsplash.com/photo-1465101046530-73398c7f28ca?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Cell Culture" />
-<div class="card-body">
-<div class="subtitle">Cell Therapy</div>
-<div class="title"><strong>Stem Cell Platform</strong></div>
-<div class="description">Cultivating pluripotent stem cells for regenerative medicine.</div>
-</div>
-</div>
-<div class="project-card"><img src="https://images.unsplash.com/photo-1515378791036-0648a3ef77b2?auto=format&amp;fit=crop&amp;w=600&amp;q=80" alt="Bioinformatics" />
-<div class="card-body">
-<div class="subtitle">Bioinformatics</div>
-<div class="title"><strong>AI Diagnostics</strong></div>
-<div class="description">Leveraging machine learning for rapid disease detection.</div>
-</div>
-</div>
-</div>
-</section>
-<section>
-<h2><img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f52c.svg" alt="Microscope" /> Coding in Biotech</h2>
-<p>Coding is essential in modern biotechnology, from analyzing genetic data to simulating biological processes. Here are some of my coding projects and example snippets:</p>
-<ul>
-<li><strong>DNA Sequence Analyzer:</strong> Python script for identifying motifs and mutations in DNA sequences.</li>
-<li><strong>Protein Structure Visualizer:</strong> Web app using JavaScript and 3D libraries to display protein models.</li>
-<li><strong>Bioinformatics Pipeline:</strong> Automated workflow for processing raw sequencing data.</li>
-</ul>
-<p><strong>Sample Python Snippet (DNA to RNA Transcription):</strong></p>
-<pre><code class="language-python">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>My Biotech Journey</title>
+  <style>
+    body {
+      font-family: 'Segoe UI', Arial, sans-serif;
+      margin: 0;
+      background: #6a8eae;
+      color: #222;
+    }
+    header {
+      background: #157145;
+      color: #fff;
+      padding: 2rem 1rem 1rem 1rem;
+      text-align: center;
+    }
+    nav {
+      margin-top: 1rem;
+    }
+    nav a {
+      color: #fff;
+      text-decoration: none;
+      margin: 0 1rem;
+      font-weight: bold;
+    }
+    .container {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 1rem;
+      background: #fff;
+      border-radius: 8px;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.03);
+    }
+    h2 {
+      color: #57a773;
+      margin-top: 2rem;
+    }
+    .about, .projects, .team, .contact {
+      margin-bottom: 2rem;
+    }
+    .project-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .project-card {
+      background: #f1f2f6;
+      border-radius: 6px;
+      width: 270px;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+      overflow: hidden;
+      text-align: center;
+      transition: transform 0.15s;
+    }
+    .project-card:hover {
+      transform: translateY(-4px) scale(1.03);
+    }
+    .project-card img {
+      width: 100%;
+      height: 160px;
+      object-fit: cover;
+      background: #dff9fb;
+    }
+    .project-card .card-body {
+      padding: 1rem;
+    }
+    .team-grid {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+      margin-top: 1rem;
+    }
+    .team-member {
+      flex: 1 1 200px;
+      background: #f1f2f6;
+      border-radius: 6px;
+      text-align: center;
+      padding: 1rem;
+      box-shadow: 0 1px 4px rgba(0,0,0,0.05);
+    }
+    .team-member img {
+      width: 90px;
+      height: 90px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 0.5rem;
+      background: #dff9fb;
+    }
+    .contact-info {
+      background: #f1f2f6;
+      padding: 1rem;
+      border-radius: 6px;
+      text-align: center;
+    }
+    @media (max-width: 800px) {
+      .project-grid, .team-grid {
+        flex-direction: column;
+        align-items: center;
+      }
+      .container {
+        margin: 1rem;
+      }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <h1>My Biotech Journey</h1>
+    <p>Student Portfolio &mdash; Biotechnology</p>
+  </header>
+  <div class="container">
+    <main>
+      <section>
+        <h2>About Me</h2>
+        <p>Hello! I'm a passionate biotechnology student interested in the intersection of biology, technology, and data science. This portfolio highlights my academic journey, coding projects, research papers, and lab reports.</p>
+      </section>
+      <section>
+        <h2>🔬 Coding in Biotech</h2>
+        <p>Coding is essential in modern biotechnology, from analyzing genetic data to simulating biological processes. Here are some of my coding projects and example snippets:</p>
+        <ul>
+          <li><strong>DNA Sequence Analyzer:</strong> Python script for identifying motifs and mutations in DNA sequences.</li>
+          <li><strong>Protein Structure Visualizer:</strong> Web app using JavaScript and 3D libraries to display protein models.</li>
+          <li><strong>Bioinformatics Pipeline:</strong> Automated workflow for processing raw sequencing data.</li>
+        </ul>
+        <p><strong>Sample Python Snippet (DNA to RNA Transcription):</strong></p>
+        <pre><code class="language-python">
 def dna_to_rna(dna_sequence):
     return dna_sequence.replace('T', 'U')
 
 dna_seq = 'ACGTGTCAGTGGGAC'
 rna_seq = dna_to_rna(dna_seq)
 print(rna_seq)  # Output: ACGUGUCAGUGGGAC
-            </code></pre>
-<p><strong>Sample Python Snippet (GC Content Analysis):</strong></p>
-<pre><code class="language-python">
+        </code></pre>
+        <p><strong>Sample Python Snippet (GC Content Analysis):</strong></p>
+        <pre><code class="language-python">
 def get_gc_content(dna_seq):
     gc_count = dna_seq.count('G') + dna_seq.count('C')
     nucleotide_count = len(dna_seq)
@@ -60,9 +144,9 @@ def get_gc_content(dna_seq):
 
 def analyze_gc_content(dna_seq):
     gc_content = get_gc_content(dna_seq)
-    if gc_content &gt; 65:
+    if gc_content > 65:
         return f'DNA sequence has high GC content: {gc_content}%'
-    elif gc_content &lt; 40:
+    elif gc_content < 40:
         return f'DNA sequence has low GC content: {gc_content}%'
     else:
         return f'DNA sequence has moderate GC content: {gc_content}%'
@@ -70,42 +154,21 @@ def analyze_gc_content(dna_seq):
 dna_seq = 'ATGCCGTTCAATAGACGTA'
 result = analyze_gc_content(dna_seq)
 print(result)
-            </code></pre>
-<!-- Snippets adapted from [6] --></section>
-<section>
-<h2><img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f52e.svg" alt="Crystal Ball" /> Research Papers</h2>
-<p>I have contributed to and authored several research papers as part of my coursework and independent studies:</p>
-<ul>
-<li><strong>CRISPR Applications in Plant Biotechnology</strong> &mdash; Review of gene editing techniques and their impact on crop resilience.</li>
-<li><strong>Microbial Biofactories:</strong> Engineering bacteria for sustainable chemical production.</li>
-<li><strong>Data-Driven Drug Discovery:</strong> Using machine learning to identify potential drug candidates.</li>
-</ul>
-<p><strong>Sample Python Snippet (Machine Learning Preprocessing):</strong></p>
-<pre><code class="language-python">
-from sklearn.preprocessing import StandardScaler
-
-scaler = StandardScaler()
-X_scaled = scaler.fit_transform(dfx.drop(columns=["annotation"]))
-            </code></pre>
-<!-- Snippet adapted from [3] --></section>
-<section>
-<h2><img class="icon" src="https://cdn.jsdelivr.net/gh/twitter/twemoji@14.0.2/assets/svg/1f9ec.svg" alt="Petri Dish" /> Lab Reports</h2>
-<p>Laboratory work is at the core of biotech studies. Here are some of my recent lab reports:</p>
-<ul>
-<li><strong>Enzyme Kinetics:</strong> Measuring the effect of inhibitors on enzyme activity.</li>
-<li><strong>Gene Expression Analysis:</strong> RT-qPCR experiment to quantify mRNA levels in yeast.</li>
-<li><strong>Plasmid Isolation and Verification:</strong> Gel electrophoresis and restriction digest analysis.</li>
-</ul>
-<p><strong>Sample Python Snippet (Working with Biopython Sequences):</strong></p>
-<pre><code class="language-python">
-from Bio.Seq import Seq
-
-my_seq = Seq("AGTACACTGGT")
-print("Sequence:", my_seq)
-print("Complement:", my_seq.complement())
-print("Reverse Complement:", my_seq.reverse_complement())
-print("Transcribed (RNA):", my_seq.transcribe())
-            </code></pre>
-<!-- Snippet adapted from [5] --></section>
-</main>
-<div class="footer">&copy; 2025 Biotech Student Portfolio</div>
+        </code></pre>
+        <!-- Snippets adapted from [6] -->
+      </section>
+      <section>
+        <h2>🔮 Research Papers</h2>
+        <p>I have contributed to and authored several research papers as part of my coursework and independent studies:</p>
+        <ul>
+          <li><strong>CRISPR Applications in Plant Biotechnology</strong> &mdash; Review of gene editing techniques and their impact on crop resilience.</li>
+          <li><strong>Microbial Biofactories:</strong> Engineering bacteria for sustainable chemical production.</li>
+          <li><strong>Data-Driven Drug Discovery:</strong> Using machine learning to identify potential drug candidates.</li>
+        </ul>
+        <p><strong>Sample Python Snippet (Machine Learning Preprocessing):</strong></p>
+        <!-- Snippet adapted from [5] -->
+      </section>
+    </main>
+  </div>
+</body>
+</html>
